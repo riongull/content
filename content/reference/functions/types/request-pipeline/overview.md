@@ -41,7 +41,6 @@ In between the execution layers, you can use functions at several **hook points*
 
 * The [`TRANSFORM_ARGUMENT` hook point](!alias-caich7oeph) after the schema validation allows you to **transforms the input arguments** of the GraphQL mutations and **enforce custom constraints**.
 * The [`PRE_WRITE` hook point](!alias-phe1gei6io) after the data validation gives you the chance to **commmunicate with external APIs and services** before data is actually written to the database.
-* After the successful extraction of the GraphQL operations from the raw request, the **data validation** layer checks predefined constraints and permissions.
 * The [`TRANSFORM_PAYLOAD` hook point](!alias-ecoos0ait6) allows you **transform the payload** that is sent back as response.
 
 > For a given trigger, only **one function** can be assigned to each hook point.
